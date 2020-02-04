@@ -5,20 +5,28 @@
   <head>
     <meta charset="utf-8">
     <title>本人閲覧回避</title>
-  </head>
-  <body>
-         <script type="text/javascript">
-   function gate() {
-      var UserInput = prompt("パスワードを入力して下さい:","");
-      location.href = UserInput + "https://ticutter.github.io/tictic.io/";
-   }
+ <html>
+<head>
 
-    var UserInput = prompt("パスワードを入力して下さい:","");
-      location.href = UserInput + "https://ticutter.github.io/tictic.io/";
-    </script>                        
-                                
-           
-       
-         
-  </body>
+<script type = "text/javascript">
+<!--
+
+function matchPass() {
+
+var inpass = document.forms[ "pass" ].elements[ "inpass" ].value;
+var validpass = "yahoo!";
+if( inpass == validpass ) location.href = "http://www.yahoo.co.jp";
+else alert( "パスワードが間違っています。" );
+
+}
+</script>
+</head>
+<body>
+<form name = "pass">
+<div>
+<input type = "text" value = "" name = "inpass">
+<input type = "button" value = "認証" onclick = "matchPass();">
+</div>
+</form>
+</body>
 </html>
