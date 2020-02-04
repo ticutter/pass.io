@@ -7,7 +7,10 @@
     <title>本人閲覧回避</title>
  <html>
 <head>
-
+<font size="5">タクマッチーじゃないか確認するための検査です。全部で３回あります。</font>
+  <font size="4">-７×（-4）</font>
+  
+  
 <script type = "text/javascript">
 <!--
 
@@ -16,7 +19,7 @@ function matchPass() {
 var inpass = document.forms[ "pass" ].elements[ "inpass" ].value;
 var validpass = "28";
 if( inpass == validpass ) location.href = "https://ticutter.github.io/tictic.io/";
-else alert( "パスワードが間違っています。" );
+else alert( "答えが違います" );
 
 }
 </script>
@@ -25,7 +28,7 @@ else alert( "パスワードが間違っています。" );
 <form name = "pass">
 <div>
 <input type = "text" value = "" name = "inpass">
-<input type = "button" value = "認証" onclick = "matchPass();">
+<input type = "button" value = "回答" onclick = "matchPass();">
 </div>
 </form>
 </body>
